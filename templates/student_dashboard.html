@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    
+
+    <div class="container">
+        <h2>Welcome {{ student.name }}</h2>
+        <hr>
+        <p>
+            <b>Name :</b>
+            {{ student.name }}
+        </p>
+        <p>
+            <b>Roll Number :</b>
+            {{ student.roll_no }}
+        </p>
+        <p>
+            <b>Student ID :</b>
+            {{ student.id }}
+        </p>
+        <p>
+             <b>Email :</b>
+            {{ student.email }}
+        </p>
+        <hr>
+        <a href="/student_login">
+            <button>Logout</button>
+        </a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Update Student</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+<h1>Update Student</h1>
+<form action="/update_student" method="POST">
+<input
+type="hidden"
+name="old_email"
+value="{{ student.email }}">
+<input
+type="hidden"
+name="teacher_email"
+value="{{teacher.email}}">
+<label>Name</label>
+<input
+type="text"
+name="name"
+value="{{ student.name }}"
+required>
+<label>Email</label>
+<input
+type="email"
+name="email"
+value="{{ student.email }}"
+required>
+<label>Roll Number</label>
+<input
+type="text"
+name="roll_no"
+value="{{ student.roll_no }}"
+required>
+<label>id</label>
+<input
+type="text"
+name="id"
+value="{{ student.id }}"
+required>
+<label>Password</label>
+<input
+type="text"
+name="password"
+value="{{ student.password }}"
+required>
+<button>
+Update Student
+</button>
+</form>
+</div>
+</body>
+</html>

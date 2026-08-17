@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Teacher Login</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Teacher Login</h1>
+        <form action="/teacher_login" method="POST">
+            <label>Email</label>
+            <input
+                type="email"
+                name="email"
+                placeholder="Enter Email"
+                required
+            >
+            <label>Password</label>
+            <input
+                type="password"
+                name="password"
+                placeholder="Enter Password"
+                required
+            >
+            <button>
+                Login
+            </button>
+        </form>
+    </div>
+</body>
+</html>
